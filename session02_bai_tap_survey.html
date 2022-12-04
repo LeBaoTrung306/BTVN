@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Form survey khach hang</title>
+    </head>
+    <body>
+        <form action="survey" method="post">
+            <section>
+                <h2>Market Research Survey</h2>
+                <p>Please take a few moments to complete this satisfaction survey</p>
+            </section>
+            <section>
+                <label for="age"><b>What is your age range?</b></label><br>
+                <select name="age">
+                    <option value="18-24">18-24</option>
+                    <option value="24-30">24-30</option>
+                    <option value="30-36">30-36</option>
+                </select><br>
+                <label for="income"><b>What is your yearly income range?</b></label><br>
+                <select name="income">
+                    <option value="$0-$25,000">$0-$25,000</option>
+                    <option value="$25000-$50,000">$25000-$50,000</option>
+                </select><br>
+                <label for="gender"><b>Gender Identity</b></label><br>
+                <input type="radio" name="gender" value="male">
+                <label>Male</label><br>
+                <input type="radio" name="gender" value="female">
+                <label>Female</label><br>
+                <input type="radio" name="gender" value="nonbinary">
+                <label>Nonbinary</label><br>
+                <input type="radio" name="gender" value="other">
+                <label>Other</label><br>
+                <input type="text" name="gender"><br>
+                <label for="checkproduct"><b>Which of the following products have your purchased in the last 2 months. Please check all that apply</b></label><br>
+                <input type="checkbox" name="checkproduct" value="product1">
+                <label>Product 1</label><br>
+                <input type="checkbox" name="checkproduct" value="product2">
+                <label>Product 2</label><br>
+                <input type="checkbox" name="checkproduct" value="product3">
+                <label>Product 3</label><br>
+                <label for="newproduct"><b>How often would you use our new product?</b></label><br>
+                <input type="radio" name="newproduct" value="daily">
+                <label>Daily</label><br>
+                <input type="radio" name="newproduct" value="weekly">
+                <label>Weekly</label><br>
+                <input type="radio" name="newproduct" value="monthly">
+                <label>Monthly</label><br>
+                <label for="payproduct"><b>What would you pay our product?</b></label><br>
+                $ <input type="text" name="payproduct"> - <input type="text" name="payproduct"><br>
+                Dollars   Cents <br>
+                <label for="feature"><b>What features would you like to see in the new product.</b></label><br>
+                <textarea name="feature" cols="100" rows="10"></textarea><br>
+                <p>Please rate your level of agreement with the following statements</p>
+                <table border="1">
+                    <tr>
+                        <th> </th>
+                        <th>Strongly Disagree</th>
+                        <th>Disgree</th>
+                        <th>Agree</th>
+                        <th>Strongly Agree</th>
+                    </tr>
+                    <tr>
+                        <td><b>Our products are priced fairly.</b></td>
+                        <td>
+                            <input type="radio" name="1">
+                            <p>1</p>
+                        </td>
+                        <td>
+                            <input type="radio" name="2">
+                            <p>2</p>
+                        </td>
+                        <td>
+                            <input type="radio" name="3">
+                            <p>3</p>
+                        </td>
+                        <td>
+                            <input type="radio" name="4">
+                            <p>4</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Our products are high quality.</b></td>
+                        <td>
+                            <input type="radio" name="1">
+                            <p>1</p>
+                        </td>
+                        <td>
+                            <input type="radio" name="2">
+                            <p>2</p>
+                        </td>
+                        <td>
+                            <input type="radio" name="3">
+                            <p>3</p>
+                        </td>
+                        <td>
+                            <input type="radio" name="4">
+                            <p>4</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>You would recommend our product to a friend or coworker</b></td>
+                        <td>
+                            <input type="radio" name="1">
+                            <p>1</p>
+                        </td>
+                        <td>
+                            <input type="radio" name="2">
+                            <p>2</p>
+                        </td>
+                        <td>
+                            <input type="radio" name="3">
+                            <p>3</p>
+                        </td>
+                        <td>
+                            <input type="radio" name="4">
+                            <p>4</p>
+                        </td>
+                    </tr>
+                </table>
+                <style>
+                    table{
+                        font-family: Arial, sans-serif;
+                        border-collapse: collapse;
+                        width: 50%;
+                    }
+                    td, th {
+                        border: 1px solid #dddddd;
+                        text-align: center;
+                        padding: 8px;
+                    }
+                    tr:nth-child(even) {
+                        background-color: #dddddd;
+                    }
+                </style>
+                <input type="submit" value="Submit">
+            </section>
+        </form>
+    </body>
+</html>
