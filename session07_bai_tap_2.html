@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+    <style>
+        .container{
+            display: flex;
+            width: 100%;
+            gap: 50px;
+        }
+        .convert{
+            font-size: 20px;
+            margin-top: 50%;
+        }
+    </style>
+    <script>
+
+        function showMessage(){
+            var a = document.getElementById("text").value;
+            const b = 25000;
+            var c = a*b;
+            document.write("Result: ", c);
+        }
+    </script>
+</head>
+<body>
+    <form class="container">
+        <div>
+            <p><b>Amount</b></p>
+            <input type="text" name="text" id="value">
+        </div>
+        <div>
+            <p><b>From Currency</b></p>
+            <select name="fromCurrency">
+                <option value="firstCurrency" id="VN">VietNam</option>
+            </select>
+        </div>
+        <div>
+            <p><b>To Currency</b></p>
+            <select name="toCurrency">
+                <option value="secondCurency" id="USD">USD</option>
+            </select>
+        </div>
+        <div>
+            <button type="button" class="convert" onclick="showMessage()">Convert</button>
+        </div>
+    </form>
+</body>
+</html>
