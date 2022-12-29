@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển đổi giữa feet và metters</title>
+</head>
+<body>
+    <script>
+        let met = parseFloat(prompt("Nhập vào số mét bạn muốn đổi sang feet: "));
+        let feet = parseFloat(prompt("Nhập vào số feet bạn muốn đổi sang mét: "));
+        function footToMetter(foot){
+            metter = 0.305 * foot;
+            return metter;
+        }
+        function metterToFoot(metter){
+            foot = 3.279 * metter;
+            return foot;
+        }
+        let result = metterToFoot(met);
+        console.log("Kết quả đổi từ mét ra feet là: ", result);
+        let result1 = footToMetter(feet);
+        console.log(("Kết quả đổi từ feet sang mét là: ", result1));
+    </script>
+</body>
+</html>
